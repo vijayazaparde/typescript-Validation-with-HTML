@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="validation.js"></script>
+    <title>TypeScript</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+  <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="form1.css" type="text/css" />
+<style> 
+
+</style> 
+  
+  </head>
+
+    <body>
+      
+	<div class="container">
+    <div id="main">
+
+			<article class="w3-container" style="text-align: center;">
+        <br><br><br>
+        <form name="reg" action="index.html" onsubmit="return false">
+
+          
+              <div class="centered">
+                  
+                <div class="input-icons"> 
+                  <i class="fa fa-user icon"> 
+                </i> 
+                 <input type="text" name="name" placeholder="Enter name"  size="50" style="text-align: center;" />
+                 <p id="name_error" style="color : red;"></p></div>
+        
+                 <div class="input-icons"> 
+                  <i class="fa fa-phone icon"> 
+                </i> 
+                 <input type="text"  size="50" name="phone"style="text-align: center;" placeholder="Enter Phone Number" />
+                 <p id="phone_error"style="color : red;"></p></div>
+        
+                 <div class="input-icons"> 
+                  <i class="fa fa-envelope icon"> 
+                </i> 
+                 <input type="text" placeholder="Enter Email" size="50" style="text-align: center;" name="email" id="email" />
+                 <p id="email_error"style="color : red;" value="email"></p></div>
+        
+                 <div class="input-icons"> 
+                  <i class="fa fa-key icon"> 
+                </i> 
+                 <input type="password" name="password"size="50" style="text-align: center;" placeholder="Password" />
+                 <p id="pass_error" style="color : red;"></p></div>
+        
+                 <div class="input-icons"> 
+                  <i class="fa fa-lock fa-lg icon"></i>
+                 <input type="password" placeholder="Confirm Password" size="50" style="text-align: center;" name="confirm_pass"/>
+                 <p id="confirm_error" style="color : red;"></p></div>
+                 <button class="button"  style="width: 15%;" id="myBtn" onClick="Redirect()" >Log in</button>
+                 <button class="button" style=" width: 15%;" onclick="validateForm()" >Register</button><br><br>
+                 
+  
+  </div>
+  
+  </form>
+  <div>
+      <p id="result_display"></p>
+  </div>
+			</article>
+
+
+  <script type = "text/javascript">
+   
+       function Redirect() {
+         if(validateForm())
+          window.location = "home.html";
+       }
+    //-->
+ </script>
+  </body>
+</html>
